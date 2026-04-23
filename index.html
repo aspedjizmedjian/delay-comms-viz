@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Tracking Communications</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>Order Tracking Communications</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="timeline-container">
+      <div class="timeline-stages" id="timelineStages"></div>
+      <div class="timeline-track">
+        <div class="timeline-progress" id="timelineProgress"></div>
+      </div>
+    </div>
+
+    <div class="channel-tabs" id="channelTabs">
+      <button class="channel-tab active" data-channel="inapp">In App</button>
+      <button class="channel-tab" data-channel="push">Notifications</button>
+      <button class="channel-tab" data-channel="sms">SMS</button>
+      <button class="channel-tab" data-channel="email">Email</button>
+      <button class="channel-tab" data-channel="seasonal">Seasonal</button>
+    </div>
+
+    <div class="content-area" id="contentArea">
+      <div class="empty-state">
+        <p>Select a stage above to see communications</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
