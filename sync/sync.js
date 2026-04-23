@@ -11,8 +11,19 @@ const OUTPUT_PATH = path.join(__dirname, "..", "app.js");
 const GITHUB_API = "https://api.github.com";
 const TOKEN = process.env.GITHUB_TOKEN;
 
-if (!TOKEN) {
-  console.error("Error: GITHUB_TOKEN environment variable is required.");
+// ── CLI args ──
+// Usage: node sync.js --local /path/to/repo-clone
+const args = process.argv.slice(2);
+const localIdx = args.indexOf("--local");
+const LOCAL_ROOT = localIdx !== -1 ? args[localIdx + 1] : null;
+
+if (!LOCAL_ROOT && !TOKEN) {
+  console.error("Error: GITHUB_TOKEN environment variable is required (or use --local /path/to/repo).");
+  process.exit(1);
+}
+
+if (LOCAL_ROOT && !fs.existsSync(LOCAL_ROOT)) {
+  console.error(`Error: Local repo path does not exist: ${LOCAL_ROOT}`);
   process.exit(1);
 }
 
@@ -33,6 +44,13 @@ async function verifyRepoAccess(repo) {
   const data = await res.json();
   console.log(`  ✓ Access verified (default branch: ${data.default_branch})\n`);
   return data.default_branch;
+}
+
+// ── Read a file from a local repo clone ──
+function readLocalFile(filePath) {
+  const fullPath = path.join(LOCAL_ROOT, filePath);
+  if (!fs.existsSync(fullPath)) return null;
+  return fs.readFileSync(fullPath, "utf-8");
 }
 
 // ── Fetch a file from GitHub API ──
@@ -79,8 +97,10 @@ async function fetchSourceData(source, ref) {
     // Fetch each language file
     for (const [lang, suffix] of Object.entries(group.suffixes)) {
       const filePath = group.basePath + suffix;
-      console.log(`  Fetching ${filePath}`);
-      const xml = await fetchFile(source.repo, filePath, ref);
+      console.log(`  ${LOCAL_ROOT ? "Reading" : "Fetching"} ${filePath}`);
+      const xml = LOCAL_ROOT
+        ? readLocalFile(filePath)
+        : await fetchFile(source.repo, filePath, ref);
       if (!xml) {
         console.warn(`  ⚠ Not found: ${filePath}`);
         continue;
@@ -208,11 +228,15 @@ async function main() {
   const template = fs.readFileSync(TEMPLATE_PATH, "utf-8");
 
   // Fetch all source data
-  console.log("Fetching .resx files from source repos...\n");
+  if (LOCAL_ROOT) {
+    console.log(`Reading .resx files from local clone: ${LOCAL_ROOT}\n`);
+  } else {
+    console.log("Fetching .resx files from source repos...\n");
+  }
   let lookup = {};
   for (const source of config.sources) {
     console.log(`Source: ${source.repo}`);
-    const ref = await verifyRepoAccess(source.repo);
+    const ref = LOCAL_ROOT ? null : await verifyRepoAccess(source.repo);
     const data = await fetchSourceData(source, ref);
     Object.assign(lookup, data);
   }

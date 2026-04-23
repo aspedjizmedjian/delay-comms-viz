@@ -33,29 +33,29 @@
           {
             "type": "combined",
             "scenario": "Confirming",
-            "titleKey": "order.liveactivity.subtitle.CONFIRMING",
-            "descKey": "order.tracking.progress.substatus.confirming.GENERIC_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.CONFIRMING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.CONFIRMING_ORDER",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Confirming — No Rider Yet",
-            "titleKey": "order.liveactivity.subtitle.CONFIRMING",
-            "descKey": "order.tracking.progress.substatus.confirming.NO_RIDER_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.CONFIRMING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.CONFIRMING_NO_RIDER",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Confirming — Rider Assigned",
-            "titleKey": "order.tracking.progress.title.confirming.RIDER_ASSIGNED",
-            "descKey": "order.tracking.progress.substatus.confirming.RIDER_ASSIGNED_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.CONFIRMING_AND_RIDER_ASSIGNED",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.CONFIRMING_RIDER_ASSIGNED",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Confirming Delayed",
-            "titleKey": "order.liveactivity.subtitle.CONFIRMING",
-            "descKey": "order.tracking.progress.substatus.confirming.LATE_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.CONFIRMING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.CONFIRMING_DELAYED",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
@@ -68,7 +68,7 @@
           {
             "type": "flat",
             "scenario": "Rider Assigned Status",
-            "key": "order.tracking.progress.substatus.confirming.RIDER_ASSIGNED_SUBTITLE",
+            "key": "order.tracking.progress.substatus.confirming.RIDER_ASSIGNED",
             "surfaces": ["otp"]
           },
           {
@@ -90,45 +90,49 @@
           {
             "type": "flat",
             "scenario": "Header",
-            "key": "order.tracking.progress.timeline.HEADER",
+            "key": "order.timeline.HEADER_TITLE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Order Placed (Complete)",
-            "key": "order.tracking.progress.timeline.ORDER_PLACED_COMPLETE",
+            "key": "order.timeline.ORDER_PLACED_TITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Vendor Confirming (Active)",
-            "key": "order.tracking.progress.timeline.VENDOR_CONFIRMING_ACTIVE",
+            "scenario": "Vendor Confirming (Active) — Title",
+            "key": "order.timeline.VENDOR_CONFIRMING_TITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Vendor Confirming — Delay (Active)",
-            "key": "order.tracking.progress.timeline.VENDOR_CONFIRMING_DELAY_ACTIVE",
-            "delay": true,
+            "scenario": "Vendor Confirming (Active) — Subtitle",
+            "key": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Vendor Confirmed (Complete)",
-            "key": "order.tracking.progress.timeline.VENDOR_CONFIRMED_COMPLETE",
+            "scenario": "Vendor Confirming (Complete) — Title",
+            "key": "order.timeline.VENDOR_CONFIRMING_TITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Vendor Confirming — Delay (Complete)",
-            "key": "order.tracking.progress.timeline.VENDOR_CONFIRMING_DELAY_COMPLETE",
-            "delay": true,
+            "scenario": "Vendor Confirming (Complete) — Subtitle",
+            "key": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Vendor Confirming (Inactive)",
+            "key": "order.timeline.VENDOR_CONFIRMING_TITLE_INACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Footer",
-            "key": "order.tracking.progress.timeline.FOOTER",
+            "key": "order.timeline.FOOTER_TITLE",
             "surfaces": ["otp"]
           }
         ],
@@ -136,26 +140,26 @@
           {
             "type": "flat",
             "scenario": "Badge — Order Placed",
-            "key": "order.tracking.progress.badge.ORDER_PLACED",
+            "key": "order.tracking.progress.badge.confirming",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "flat",
             "scenario": "On Time Tag",
-            "key": "order.tracking.progress.indicator.ON_TIME",
+            "key": "order.tracking.progress.lifecycle_widget.delay_status_tag.ON_TIME",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "flat",
             "scenario": "Updated Time Tag",
-            "key": "order.tracking.progress.indicator.UPDATED_TIME",
+            "key": "order.tracking.progress.lifecycle_widget.delay_status_tag.UPDATED_TIME",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "flat",
             "scenario": "Delay Tag Tooltip",
-            "key": "order.tracking.progress.indicator.DELAY_TAG_TOOLTIP",
+            "key": "order.tracking.progress.lifecycle_widget.delay_status_tag.TOOLTIP_DESCRIPTION",
             "surfaces": ["otp"]
           }
         ]
@@ -163,13 +167,13 @@
       "push": [
         {
           "type": "flat",
-          "scenario": "Accepted by Vendor",
-          "key": "order.externalpushnotification.ACCEPTED_BY_VENDOR"
+          "scenario": "Order Accepted — Title",
+          "key": "order.externalpushnotification.ORDER_ACCEPTED_TITLE"
         },
         {
           "type": "flat",
-          "scenario": "Accepted by Vendor (with ETA)",
-          "key": "order.externalpushnotification.ACCEPTED_BY_VENDOR_WITH_ETA"
+          "scenario": "Order Accepted — Message",
+          "key": "order.externalpushnotification.ORDER_ACCEPTED_MESSAGE"
         }
       ],
       "sms": "__static__",
@@ -182,88 +186,88 @@
           {
             "type": "combined",
             "scenario": "Preparing",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.GENERIC_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_GETTING_READY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Getting Ready v2",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.GETTING_READY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_GETTING_READY_V2",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Rider on Way",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.RIDER_ON_WAY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_RIDER_ON_WAY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Rider at Vendor",
-            "titleKey": "order.tracking.progress.title.preparing.RIDER_AT_VENDOR",
-            "descKey": "order.tracking.progress.substatus.preparing.RIDER_AT_VENDOR_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_RIDER_AT_VENDOR",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Rider Near Pickup",
-            "titleKey": "order.tracking.progress.title.preparing.RIDER_NEAR_PICKUP",
-            "descKey": "order.tracking.progress.substatus.preparing.RIDER_NEAR_PICKUP_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING_RIDER_NEAR_PICKUP",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_RIDER_NEAR_PICKUP",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Good Things",
-            "titleKey": "order.tracking.progress.title.preparing.GOOD_THINGS",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING_GOOD_THINGS_PROGRESS",
             "descKey": "order.tracking.progress.substatus.preparing.GENERIC_SUBTITLE",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Speeding Up",
-            "titleKey": "order.tracking.progress.title.preparing.SPEEDING_UP",
-            "descKey": "order.tracking.progress.substatus.preparing.GETTING_READY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING_SPEEDING_THINGS_UP",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_GETTING_READY_V2",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing — Vendor Busy",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.VENDOR_BUSY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_VENDOR_BUSY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing Delayed — No Rider",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.LATE_NO_RIDER_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_DELAYED_NO_RIDER",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Preparing Delayed — Rider Assigned",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.LATE_RIDER_ASSIGNED_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_DELAYED_RIDER",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
-            "scenario": "Preparing Delayed — With ETA",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.LATE_WITH_ETA_SUBTITLE",
+            "scenario": "Preparing Delayed — Generic",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_DELAYED",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
-            "scenario": "Preparing Delayed — Vendor Nudge",
-            "titleKey": "order.liveactivity.subtitle.PREPARING",
-            "descKey": "order.tracking.progress.substatus.preparing.LATE_VENDOR_NUDGE_SUBTITLE",
+            "scenario": "Preparing Delayed — Vendor",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.PREPARING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PREPARING_DELAYED_VENDOR",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
@@ -281,8 +285,14 @@
           },
           {
             "type": "flat",
+            "scenario": "Rider Near Pickup Status",
+            "key": "order.tracking.progress.substatus.preparing.RIDER_NEAR_PICKUP_SUBTITLE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
             "scenario": "Rider Arrived at Vendor Status",
-            "key": "order.tracking.progress.substatus.preparing.RIDER_AT_VENDOR_SUBTITLE",
+            "key": "order.tracking.progress.substatus.preparing.RIDER_ARRIVED_SUBTITLE",
             "surfaces": ["otp"]
           },
           {
@@ -291,124 +301,118 @@
             "key": "order.tracking.progress.substatus.preparing.VENDOR_LATE_SUBTITLE",
             "delay": true,
             "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "On Time",
-            "key": "order.tracking.progress.homescreen.preparing.ON_TIME",
-            "surfaces": ["homescreen"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Delay",
-            "key": "order.tracking.progress.homescreen.preparing.DELAY",
-            "delay": true,
-            "surfaces": ["homescreen"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Stacked Order",
-            "key": "order.tracking.progress.substatus.preparing.STACKED_ORDER",
-            "surfaces": ["otp"]
           }
         ],
         "timeline": [
           {
             "type": "flat",
-            "scenario": "Rider Assigned (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_ASSIGNED_ACTIVE",
+            "scenario": "Rider Assigned (Active) — Title",
+            "key": "order.timeline.RIDER_ASSIGNED_TITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider Assigned — Delay (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_ASSIGNED_DELAY_ACTIVE",
+            "scenario": "Rider Assigned (Active) — Subtitle",
+            "key": "order.timeline.RIDER_ASSIGNED_SUBTITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider Assigned (Complete) — Title",
+            "key": "order.timeline.RIDER_ASSIGNED_TITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider Assigned (Complete) — Subtitle",
+            "key": "order.timeline.RIDER_ASSIGNED_SUBTITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider Assigned (Inactive)",
+            "key": "order.timeline.RIDER_ASSIGNED_TITLE_INACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider at Vendor (Active) — Title",
+            "key": "order.timeline.RIDER_AT_VENDOR_TITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider at Vendor (Active) — Subtitle",
+            "key": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider at Vendor (Complete) — Title",
+            "key": "order.timeline.RIDER_AT_VENDOR_TITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider at Vendor (Complete) — Subtitle",
+            "key": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider at Vendor (Inactive)",
+            "key": "order.timeline.RIDER_AT_VENDOR_TITLE_INACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Preparing for Pickup (Active) — Title",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Preparing for Pickup (Active) — Subtitle",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Preparing for Pickup — Rider Delayed (Active) — Title",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE_RIDER_DELAYED",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider Assigned (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_ASSIGNED_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider Assigned — Delay (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_ASSIGNED_DELAY_COMPLETE",
+            "scenario": "Preparing for Pickup — Rider Delayed (Active) — Subtitle",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE_RIDER_DELAYED",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider at Vendor (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_AT_VENDOR_ACTIVE",
+            "scenario": "Preparing for Pickup (Complete) — Title",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider at Vendor — Delay (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_AT_VENDOR_DELAY_ACTIVE",
+            "scenario": "Preparing for Pickup (Complete) — Subtitle",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Preparing for Pickup — Rider Delayed (Complete) — Subtitle",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE_RIDER_DELAYED",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider at Vendor (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_AT_VENDOR_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider at Vendor — Delay (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_AT_VENDOR_DELAY_COMPLETE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Active)",
-            "key": "order.tracking.progress.timeline.PREPARING_PICKUP_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup — Delay (Active)",
-            "key": "order.tracking.progress.timeline.PREPARING_PICKUP_DELAY_ACTIVE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Order Ready — Rider Delayed (Active)",
-            "key": "order.tracking.progress.timeline.ORDER_READY_RIDER_DELAYED_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Order Ready — Rider Delayed Subtitle",
-            "key": "order.tracking.progress.timeline.ORDER_READY_RIDER_DELAYED_SUBTITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Complete)",
-            "key": "order.tracking.progress.timeline.PREPARING_PICKUP_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup — Delay (Complete)",
-            "key": "order.tracking.progress.timeline.PREPARING_PICKUP_DELAY_COMPLETE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Pickup — Rider Delay (Complete)",
-            "key": "order.tracking.progress.timeline.PICKUP_RIDER_DELAY_COMPLETE",
-            "delay": true,
+            "scenario": "Preparing for Pickup (Inactive)",
+            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_INACTIVE",
             "surfaces": ["otp"]
           }
         ],
@@ -416,12 +420,36 @@
           {
             "type": "flat",
             "scenario": "Badge — Preparing",
-            "key": "order.tracking.progress.badge.PREPARING",
+            "key": "order.tracking.progress.badge.preparing",
+            "surfaces": ["homescreen", "otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Badge — On Time",
+            "key": "order.tracking.progress.badge.ON_TIME_TEXT",
+            "surfaces": ["homescreen", "otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Badge — Time Changed",
+            "key": "order.tracking.progress.badge.TIME_CHANGED_TEXT",
+            "delay": true,
             "surfaces": ["homescreen", "otp"]
           }
         ]
       },
-      "push": [],
+      "push": [
+        {
+          "type": "flat",
+          "scenario": "Order Near Vendor — Title",
+          "key": "order.externalpushnotification.ORDER_NEAR_VENDOR_TITLE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Order Near Vendor — Message",
+          "key": "order.externalpushnotification.ORDER_NEAR_VENDOR_MESSAGE"
+        }
+      ],
       "sms": "__static__",
       "email": []
     },
@@ -432,98 +460,85 @@
           {
             "type": "combined",
             "scenario": "Delivering",
-            "titleKey": "order.liveactivity.subtitle.DELIVERING",
-            "descKey": "order.tracking.progress.substatus.delivering.GENERIC_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_ON_WAY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Delivering — Heading Your Way",
-            "titleKey": "order.tracking.progress.title.delivering.HEADING_YOUR_WAY",
-            "descKey": "order.tracking.progress.substatus.delivering.GENERIC_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING_HEADING_YOUR_WAY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_ON_WAY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Delivering — Order Nearby",
-            "titleKey": "order.tracking.progress.title.delivering.ORDER_NEARBY",
-            "descKey": "order.tracking.progress.substatus.delivering.NEAR_DROPOFF_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING_ORDER_NEARBY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_NEAR_DROP_OFF",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Delivering — Rider Nearby",
-            "titleKey": "order.tracking.progress.title.delivering.RIDER_NEARBY",
-            "descKey": "order.tracking.progress.substatus.delivering.NEAR_DROPOFF_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING_RIDER_NEARBY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_NEAR_DROP_OFF",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Near Drop-off — Delayed",
-            "titleKey": "order.tracking.progress.title.delivering.ORDER_NEARBY",
-            "descKey": "order.tracking.progress.substatus.delivering.NEAR_DROPOFF_DELAY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING_ORDER_NEARBY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_DELAYED_NEAR_DROP_OFF",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Moderate Delay — On Way",
-            "titleKey": "order.liveactivity.subtitle.DELIVERING",
-            "descKey": "order.tracking.progress.substatus.delivering.MODERATE_DELAY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_MODERATE_DELAY_ON_WAY",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Severe Delay — On Way",
-            "titleKey": "order.liveactivity.subtitle.DELIVERING",
-            "descKey": "order.tracking.progress.substatus.delivering.SEVERE_DELAY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DELIVERING_SEVERE_DELAY_ON_WAY",
             "delay": true,
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Other Nearby Delivery",
-            "titleKey": "order.liveactivity.subtitle.DELIVERING",
-            "descKey": "order.tracking.progress.substatus.delivering.OTHER_NEARBY_DELIVERY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.OTHER_NEAR_BY_DELIVERY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "PIN Code",
-            "titleKey": "order.liveactivity.subtitle.DELIVERING",
-            "descKey": "order.tracking.progress.substatus.delivering.PIN_CODE_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERING",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.ORDER_PIN_CODE_MESSAGE",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "flat",
-            "scenario": "Picked Up — Rider Arrived",
-            "key": "order.tracking.progress.substatus.delivering.PICKED_UP_SUBTITLE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider Near Pickup",
-            "key": "order.tracking.progress.substatus.delivering.RIDER_NEAR_PICKUP_SUBTITLE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider Late to Pick Up",
-            "key": "order.tracking.progress.substatus.delivering.RIDER_LATE_PICKUP_SUBTITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
             "scenario": "Delivering — Generic Status",
-            "key": "order.tracking.progress.substatus.delivering.GENERIC_STATUS_SUBTITLE",
+            "key": "order.tracking.progress.substatus.delivering.GENERIC_SUBTITLE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Near Drop-off Status",
-            "key": "order.tracking.progress.substatus.delivering.NEAR_DROPOFF_STATUS_SUBTITLE",
+            "key": "order.tracking.progress.substatus.delivering.RIDER_NEAR_DROP_OFF_SUBTITLE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Rider Reached Drop-off",
+            "key": "order.tracking.progress.substatus.delivering.RIDER_REACHED_DROP_OFF_SUBTITLE",
             "surfaces": ["otp"]
           },
           {
@@ -532,115 +547,119 @@
             "key": "order.tracking.progress.substatus.delivering.OVERALL_ORDER_LATE_SUBTITLE",
             "delay": true,
             "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Near Drop-off — Delay (HS)",
-            "key": "order.tracking.progress.homescreen.delivering.NEAR_DROPOFF_DELAY",
-            "delay": true,
-            "surfaces": ["homescreen"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Exceeds PDT — Generic",
-            "key": "order.tracking.progress.homescreen.delivering.EXCEEDS_PDT_GENERIC",
-            "delay": true,
-            "surfaces": ["homescreen"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Exceeds PDT — Near Drop-off",
-            "key": "order.tracking.progress.homescreen.delivering.EXCEEDS_PDT_NEAR_DROPOFF",
-            "surfaces": ["homescreen"]
           }
         ],
         "timeline": [
           {
             "type": "flat",
-            "scenario": "Rider on the Way (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_ON_WAY_ACTIVE",
+            "scenario": "Rider on the Way (Active) — Title",
+            "key": "order.timeline.RIDER_ON_THE_WAY_TITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider on the Way — Delay (Active)",
-            "key": "order.tracking.progress.timeline.RIDER_ON_WAY_DELAY_ACTIVE",
-            "delay": true,
+            "scenario": "Rider on the Way (Active) — Subtitle",
+            "key": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider on the Way (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_ON_WAY_COMPLETE",
+            "scenario": "Rider on the Way (Complete) — Title",
+            "key": "order.timeline.RIDER_ON_THE_WAY_TITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Rider on the Way — Delay (Complete)",
-            "key": "order.tracking.progress.timeline.RIDER_ON_WAY_DELAY_COMPLETE",
-            "delay": true,
+            "scenario": "Rider on the Way (Complete) — Subtitle",
+            "key": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Delivering Order (Active)",
-            "key": "order.tracking.progress.timeline.DELIVERING_ORDER_ACTIVE",
+            "scenario": "Rider on the Way (Inactive)",
+            "key": "order.timeline.RIDER_ON_THE_WAY_TITLE_INACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Delivering — Delay (Active)",
-            "key": "order.tracking.progress.timeline.DELIVERING_DELAY_ACTIVE",
-            "delay": true,
+            "scenario": "Delivering Order (Active) — Title",
+            "key": "order.timeline.DELIVERING_ORDER_TITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Order Delivered (Complete)",
-            "key": "order.tracking.progress.timeline.ORDER_DELIVERED_COMPLETE",
+            "scenario": "Delivering Order (Active) — Subtitle",
+            "key": "order.timeline.DELIVERING_ORDER_SUBTITLE_ACTIVE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Delivering Order (Complete)",
+            "key": "order.timeline.DELIVERING_ORDER_TITLE_COMPLETE",
+            "surfaces": ["otp"]
+          },
+          {
+            "type": "flat",
+            "scenario": "Delivering Order (Inactive)",
+            "key": "order.timeline.DELIVERING_ORDER_TITLE_INACTIVE",
             "surfaces": ["otp"]
           }
         ],
         "tgo": [
           {
             "type": "flat",
-            "scenario": "Predicted Delay — Title",
-            "key": "order.tracking.progress.tgo.PREDICTED_DELAY_TITLE",
-            "delay": true,
+            "scenario": "Arrives At Label",
+            "key": "order.tgo.ARRIVES_AT_LABEL",
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
-            "scenario": "Predicted Delay — Message",
-            "key": "order.tracking.progress.tgo.PREDICTED_DELAY_MESSAGE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Actual Delay — Title",
-            "key": "order.tracking.progress.tgo.ACTUAL_DELAY_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Actual Delay — Message",
-            "key": "order.tracking.progress.tgo.ACTUAL_DELAY_MESSAGE",
-            "delay": true,
+            "scenario": "Estimated Arrival",
+            "key": "order.tgo.ESTIMATED_ARRIVAL",
             "surfaces": ["otp"]
           }
         ],
         "indicators": [
           {
             "type": "flat",
-            "scenario": "Badge — On the Way",
-            "key": "order.tracking.progress.badge.ON_THE_WAY",
+            "scenario": "Badge — Delivering",
+            "key": "order.tracking.progress.badge.delivering",
             "surfaces": ["homescreen", "otp"]
           }
         ]
       },
-      "push": "__static__",
+      "push": [
+        {
+          "type": "flat",
+          "scenario": "Order Picked Up — Title",
+          "key": "order.externalpushnotification.ORDER_PICKED_UP_TITLE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Order Picked Up — Message",
+          "key": "order.externalpushnotification.ORDER_PICKED_UP_MESSAGE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Order Near Customer — Title",
+          "key": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_TITLE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Order Near Customer — Message",
+          "key": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_MESSAGE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Rider Nearby",
+          "key": "order.externalpushnotification.EXTERNAL_RIDER_NEARBY_MESSAGE"
+        },
+        {
+          "type": "flat",
+          "scenario": "Rider Picked Up Order",
+          "key": "order.externalpushnotification.EXTERNAL_RIDER_PICKED_UP_ORDER_MESSAGE"
+        }
+      ],
       "sms": "__static__",
       "email": []
     },
@@ -651,167 +670,131 @@
           {
             "type": "combined",
             "scenario": "Delivered",
-            "titleKey": "order.liveactivity.subtitle.DELIVERED",
-            "descKey": "order.tracking.progress.substatus.delivered.ENJOY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERED",
+            "descKey": "order.tracking.progress.substatus.delivered.GENERIC_SUBTITLE",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Items Out of Stock",
-            "titleKey": "order.tracking.progress.title.delivered.ITEMS_OUT_OF_STOCK",
-            "descKey": "order.tracking.progress.substatus.delivered.ITEMS_OUT_OF_STOCK_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.title.ITEMS_ARE_OUT_OF_STOCK",
+            "descKey": "order.tracking.progress.lifecycle_widget.subtitle.CHOOSE_REPLACEMENT",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Pick Up Ready",
-            "titleKey": "order.tracking.progress.title.delivered.PICKUP_READY",
-            "descKey": "order.tracking.progress.substatus.delivered.PICKUP_READY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.title.PICK_UP_BY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.PICKUP_READY",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Drone Pickup Ready",
-            "titleKey": "order.tracking.progress.title.delivered.PICKUP_READY",
-            "descKey": "order.tracking.progress.substatus.delivered.DRONE_PICKUP_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.title.PICK_UP_BY",
+            "descKey": "order.tracking.progress.lifecycle_widget.description.DRONE_PICKUP_READY",
             "surfaces": ["homescreen", "otp"]
           },
           {
-            "type": "combined",
+            "type": "flat",
             "scenario": "Order Picked Up",
-            "titleKey": "order.tracking.progress.title.delivered.ORDER_PICKED_UP",
+            "key": "order.tracking.progress.lifecycle_widget.subtitle.PICKED_UP",
             "surfaces": ["homescreen", "otp"]
           },
           {
-            "type": "combined",
+            "type": "flat",
+            "scenario": "Pick Up Ready",
+            "key": "order.tracking.progress.lifecycle_widget.subtitle.PICK_UP_READY",
+            "surfaces": ["homescreen", "otp"]
+          },
+          {
+            "type": "flat",
             "scenario": "Order Cancelled",
-            "titleKey": "order.tracking.progress.title.delivered.ORDER_CANCELLED",
+            "key": "order.tracking.progress.lifecycle_widget.subtitle.CANCELLED",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "combined",
             "scenario": "Delivered (Temp Order)",
-            "titleKey": "order.liveactivity.subtitle.DELIVERED",
-            "descKey": "order.tracking.progress.substatus.delivered.ENJOY_SUBTITLE",
+            "titleKey": "order.tracking.progress.lifecycle_widget.subtitle.DELIVERED_TMP_ORDER",
+            "descKey": "order.tracking.progress.substatus.delivered.GENERIC_SUBTITLE",
             "surfaces": ["homescreen", "otp"]
           },
           {
             "type": "flat",
-            "scenario": "Delivered — On Time Status",
-            "key": "order.tracking.progress.substatus.delivered.ON_TIME_SUBTITLE",
-            "surfaces": ["otp"]
-          }
-        ],
-        "voucher": [
-          {
-            "type": "flat",
-            "scenario": "OTG — Normal Title",
-            "key": "order.tracking.progress.otg.NORMAL_TITLE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "OTG — Normal Description",
-            "key": "order.tracking.progress.otg.NORMAL_DESCRIPTION",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "OTG — Delayed Title",
-            "key": "order.tracking.progress.otg.DELAYED_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "OTG — Delayed Description",
-            "key": "order.tracking.progress.otg.DELAYED_DESCRIPTION",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "OTG — Claimed Title",
-            "key": "order.tracking.progress.otg.CLAIMED_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "OTG — Claimed Text",
-            "key": "order.tracking.progress.otg.CLAIMED_TEXT",
-            "delay": true,
-            "surfaces": ["otp"]
+            "scenario": "Delivered Title",
+            "key": "order.tracking.progress.lifecycle_widget.title.DELIVERED",
+            "surfaces": ["homescreen", "otp"]
           }
         ],
         "compensation": [
           {
             "type": "flat",
             "scenario": "Single Voucher — Banner Title",
-            "key": "order.tracking.progress.compensation.SINGLE_BANNER_TITLE",
+            "key": "order.compensation.vouchers.single.BANNER_TITLE",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Single Voucher — Banner Text",
-            "key": "order.tracking.progress.compensation.SINGLE_BANNER_TEXT",
+            "key": "order.compensation.vouchers.single.BANNER_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Single Voucher — Banner Action",
-            "key": "order.tracking.progress.compensation.SINGLE_BANNER_ACTION",
+            "key": "order.compensation.vouchers.single.BANNER_ACTION",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Single Voucher — Sheet Title",
-            "key": "order.tracking.progress.compensation.SINGLE_SHEET_TITLE",
+            "key": "order.compensation.vouchers.single.SHEET_TITLE",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Single Voucher — Sheet Text",
-            "key": "order.tracking.progress.compensation.SINGLE_SHEET_TEXT",
+            "key": "order.compensation.vouchers.single.SHEET_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Multiple Vouchers — Banner Title",
-            "key": "order.tracking.progress.compensation.MULTI_BANNER_TITLE",
+            "key": "order.compensation.vouchers.multiple.BANNER_TITLE",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Multiple Vouchers — Banner Text",
-            "key": "order.tracking.progress.compensation.MULTI_BANNER_TEXT",
+            "key": "order.compensation.vouchers.multiple.BANNER_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Multiple Vouchers — Banner Action",
-            "key": "order.tracking.progress.compensation.MULTI_BANNER_ACTION",
+            "key": "order.compensation.vouchers.multiple.BANNER_ACTION",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Multiple Vouchers — Sheet Title",
-            "key": "order.tracking.progress.compensation.MULTI_SHEET_TITLE",
+            "key": "order.compensation.vouchers.multiple.SHEET_TITLE",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
             "type": "flat",
             "scenario": "Multiple Vouchers — Sheet Text",
-            "key": "order.tracking.progress.compensation.MULTI_SHEET_TEXT",
+            "key": "order.compensation.vouchers.multiple.SHEET_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           }
