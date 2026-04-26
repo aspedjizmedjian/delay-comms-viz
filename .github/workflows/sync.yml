@@ -5,7 +5,7 @@ on:
       - cron: '0 8 */4 * *'                                                                                
     workflow_dispatch:                                                                                     
 
-  jobs:
+jobs:
     sync:
       runs-on: ubuntu-latest
       steps:
