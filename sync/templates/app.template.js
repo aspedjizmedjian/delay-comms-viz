@@ -14,30 +14,21 @@ const SEASONAL_DATA = {
   friday_prayer: {
     label: "Friday Prayers",
     messages: [
-      { scenario: "Friday Prayers — OTP", en: "It's Friday prayer time so deliveries might take a bit longer, but no worries, we're on it!", ar: "قد يتأخر طلبك قليلاً بسبب صلاة الجمعة، لكن لا تقلق نحن نعمل عليه!", delay: true, surfaces: ["otp"] },
-      { scenario: "Friday Prayers — Homescreen", en: "It's a little busy during Friday prayer", ar: "قد يكون هناك بعض التأخير خلال وقت صلاة الجمعة", delay: true, surfaces: ["homescreen"] },
-      { scenario: "Friday Prayers — SMS", en: "Thanks for ordering from Talabat.com. Your order is sent to Restaurant & might be delayed due to prayer time.", ar: "شكرا لاختيارك طلبات. من الممكن أن يكون هناك تأخير طفيف في التوصيل بسبب وقت الصلاة.", delay: true },
+      { scenario: "Friday Prayers", en: "It's Friday prayer time so deliveries might take a bit longer, but no worries, we're on it!", ar: "قد يتأخر طلبك قليلاً بسبب صلاة الجمعة، لكن لا تقلق نحن نعمل عليه!", delay: true, surfaces: ["otp"] },
+      { scenario: "Friday Prayers", en: "It's a little busy during Friday prayer", ar: "قد يكون هناك بعض التأخير خلال وقت صلاة الجمعة", delay: true, surfaces: ["homescreen"] },
     ],
   },
   iftar_rush: {
     label: "Ramadan / Peak Iftar",
     messages: [
-      { scenario: "Iftar Rush — OTP", en: "It's peak time for Iftar orders! Deliveries might take a bit longer, but we've got this \u{1F4AA}", ar: "إنه وقت الذروة لطلبات الإفطار! قد يكون هناك بعض التأخير في توصيل الطلبات. لكننا نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
-      { scenario: "Iftar Rush — Homescreen", en: "Iftar time's a bit busy, but we've got this!", ar: "إنه وقت الذروة لطلبات الإفطار، لكننا نتابع طلبك!", delay: true, surfaces: ["homescreen"] },
+      { scenario: "Iftar Rush", en: "It's peak time for Iftar orders! Deliveries might take a bit longer, but we've got this \u{1F4AA}", ar: "إنه وقت الذروة لطلبات الإفطار! قد يكون هناك بعض التأخير في توصيل الطلبات. لكننا نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
+      { scenario: "Iftar Rush", en: "Iftar time's a bit busy, but we've got this!", ar: "إنه وقت الذروة لطلبات الإفطار، لكننا نتابع طلبك!", delay: true, surfaces: ["homescreen"] },
     ],
   },
   new_years: {
     label: "New Year's Eve",
     messages: [
-      { scenario: "New Year's Rush — OTP", en: "New Year's countdown is on! Orders might take a little longer due to the rush, but we're on it \u{1F4AA}", ar: "العام الجديد على الأبواب! قد يكون هناك بعض التأخير لزيادة الطلبات، ولكن لا تقلق نحن نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
-    ],
-  },
-  weather_gps: {
-    label: "Weather & GPS Issues",
-    messages: [
-      { scenario: "Bad Weather Delay — SMS", en: "Dear [Customer Name], Your order might be slightly delayed due to bad weather conditions", ar: null, delay: true },
-      { scenario: "Summer Heat Notice — SMS", en: "Summer is here! Due to the heat, riders are delivering orders by car so there might be some delays. Thanks for helping our riders keep cool", ar: null, delay: true },
-      { scenario: "Bad Weather Cancellation — SMS", en: "Hi from Talabat. Unfortunately your order [Order ID] was cancelled due to environmental circumstances.", ar: "مرحبا. للأسف تم إلغاء طلبك [Order ID] بسبب أحوال بيئية." },
+      { scenario: "New Year's Rush", en: "New Year's countdown is on! Orders might take a little longer due to the rush, but we're on it \u{1F4AA}", ar: "العام الجديد على الأبواب! قد يكون هناك بعض التأخير لزيادة الطلبات، ولكن لا تقلق نحن نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
     ],
   },
 };
@@ -209,9 +200,11 @@ function renderMsgCard(msg, showSurfaces) {
       const descText = msg.desc && msg.desc[lang] ? msg.desc[lang] : "";
       inner += `<div class="lang-row lang-row-combined" ${dir}>`;
       inner += `<span class="lang-label ${lang}">${LANG_LABELS[lang]}</span>`;
+      const actionText = msg.action && msg.action[lang] ? msg.action[lang] : "";
       inner += `<div class="combined-text">`;
       inner += `<div class="combined-title">${titleText}</div>`;
       if (descText) inner += `<div class="combined-desc">${descText}</div>`;
+      if (actionText) inner += `<div class="combined-action">${actionText}</div>`;
       inner += `</div></div>`;
     });
   } else {

@@ -100,27 +100,17 @@
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Vendor Confirming (Active) — Title",
-            "key": "order.timeline.VENDOR_CONFIRMING_TITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Vendor Confirming (Active)",
+            "titleKey": "order.timeline.VENDOR_CONFIRMING_TITLE_ACTIVE",
+            "descKey": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Vendor Confirming (Active) — Subtitle",
-            "key": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Vendor Confirming (Complete) — Title",
-            "key": "order.timeline.VENDOR_CONFIRMING_TITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Vendor Confirming (Complete) — Subtitle",
-            "key": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_COMPLETE",
+            "type": "combined",
+            "scenario": "Vendor Confirming (Complete)",
+            "titleKey": "order.timeline.VENDOR_CONFIRMING_TITLE_COMPLETE",
+            "descKey": "order.timeline.VENDOR_CONFIRMING_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
@@ -166,14 +156,10 @@
       },
       "push": [
         {
-          "type": "flat",
-          "scenario": "Order Accepted — Title",
-          "key": "order.externalpushnotification.ORDER_ACCEPTED_TITLE"
-        },
-        {
-          "type": "flat",
-          "scenario": "Order Accepted — Message",
-          "key": "order.externalpushnotification.ORDER_ACCEPTED_MESSAGE"
+          "type": "combined",
+          "scenario": "Order Accepted",
+          "titleKey": "order.externalpushnotification.ORDER_ACCEPTED_TITLE",
+          "descKey": "order.externalpushnotification.ORDER_ACCEPTED_MESSAGE"
         }
       ],
       "sms": "__static__",
@@ -305,27 +291,17 @@
         ],
         "timeline": [
           {
-            "type": "flat",
-            "scenario": "Rider Assigned (Active) — Title",
-            "key": "order.timeline.RIDER_ASSIGNED_TITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Rider Assigned (Active)",
+            "titleKey": "order.timeline.RIDER_ASSIGNED_TITLE_ACTIVE",
+            "descKey": "order.timeline.RIDER_ASSIGNED_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Rider Assigned (Active) — Subtitle",
-            "key": "order.timeline.RIDER_ASSIGNED_SUBTITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider Assigned (Complete) — Title",
-            "key": "order.timeline.RIDER_ASSIGNED_TITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider Assigned (Complete) — Subtitle",
-            "key": "order.timeline.RIDER_ASSIGNED_SUBTITLE_COMPLETE",
+            "type": "combined",
+            "scenario": "Rider Assigned (Complete)",
+            "titleKey": "order.timeline.RIDER_ASSIGNED_TITLE_COMPLETE",
+            "descKey": "order.timeline.RIDER_ASSIGNED_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
@@ -335,27 +311,17 @@
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Rider at Vendor (Active) — Title",
-            "key": "order.timeline.RIDER_AT_VENDOR_TITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Rider at Vendor (Active)",
+            "titleKey": "order.timeline.RIDER_AT_VENDOR_TITLE_ACTIVE",
+            "descKey": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Rider at Vendor (Active) — Subtitle",
-            "key": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider at Vendor (Complete) — Title",
-            "key": "order.timeline.RIDER_AT_VENDOR_TITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider at Vendor (Complete) — Subtitle",
-            "key": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_COMPLETE",
+            "type": "combined",
+            "scenario": "Rider at Vendor (Complete)",
+            "titleKey": "order.timeline.RIDER_AT_VENDOR_TITLE_COMPLETE",
+            "descKey": "order.timeline.RIDER_AT_VENDOR_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
@@ -365,47 +331,32 @@
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Active) — Title",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Preparing for Pickup (Active)",
+            "titleKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE",
+            "descKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Active) — Subtitle",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup — Rider Delayed (Active) — Title",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE_RIDER_DELAYED",
+            "type": "combined",
+            "scenario": "Preparing for Pickup — Rider Delayed (Active)",
+            "titleKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_ACTIVE_RIDER_DELAYED",
+            "descKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE_RIDER_DELAYED",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Preparing for Pickup — Rider Delayed (Active) — Subtitle",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_ACTIVE_RIDER_DELAYED",
-            "delay": true,
+            "type": "combined",
+            "scenario": "Preparing for Pickup (Complete)",
+            "titleKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_COMPLETE",
+            "descKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Complete) — Title",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup (Complete) — Subtitle",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Preparing for Pickup — Rider Delayed (Complete) — Subtitle",
-            "key": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE_RIDER_DELAYED",
+            "type": "combined",
+            "scenario": "Preparing for Pickup — Rider Delayed (Complete)",
+            "titleKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_TITLE_COMPLETE",
+            "descKey": "order.timeline.ORDER_PREPARING_FOR_PICKUP_SUBTITLE_COMPLETE_RIDER_DELAYED",
             "delay": true,
             "surfaces": ["otp"]
           },
@@ -440,14 +391,10 @@
       },
       "push": [
         {
-          "type": "flat",
-          "scenario": "Order Near Vendor — Title",
-          "key": "order.externalpushnotification.ORDER_NEAR_VENDOR_TITLE"
-        },
-        {
-          "type": "flat",
-          "scenario": "Order Near Vendor — Message",
-          "key": "order.externalpushnotification.ORDER_NEAR_VENDOR_MESSAGE"
+          "type": "combined",
+          "scenario": "Order Near Vendor",
+          "titleKey": "order.externalpushnotification.ORDER_NEAR_VENDOR_TITLE",
+          "descKey": "order.externalpushnotification.ORDER_NEAR_VENDOR_MESSAGE"
         }
       ],
       "sms": "__static__",
@@ -551,27 +498,17 @@
         ],
         "timeline": [
           {
-            "type": "flat",
-            "scenario": "Rider on the Way (Active) — Title",
-            "key": "order.timeline.RIDER_ON_THE_WAY_TITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Rider on the Way (Active)",
+            "titleKey": "order.timeline.RIDER_ON_THE_WAY_TITLE_ACTIVE",
+            "descKey": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Rider on the Way (Active) — Subtitle",
-            "key": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider on the Way (Complete) — Title",
-            "key": "order.timeline.RIDER_ON_THE_WAY_TITLE_COMPLETE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Rider on the Way (Complete) — Subtitle",
-            "key": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_COMPLETE",
+            "type": "combined",
+            "scenario": "Rider on the Way (Complete)",
+            "titleKey": "order.timeline.RIDER_ON_THE_WAY_TITLE_COMPLETE",
+            "descKey": "order.timeline.RIDER_ON_THE_WAY_SUBTITLE_COMPLETE",
             "surfaces": ["otp"]
           },
           {
@@ -581,15 +518,10 @@
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Delivering Order (Active) — Title",
-            "key": "order.timeline.DELIVERING_ORDER_TITLE_ACTIVE",
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Delivering Order (Active) — Subtitle",
-            "key": "order.timeline.DELIVERING_ORDER_SUBTITLE_ACTIVE",
+            "type": "combined",
+            "scenario": "Delivering Order (Active)",
+            "titleKey": "order.timeline.DELIVERING_ORDER_TITLE_ACTIVE",
+            "descKey": "order.timeline.DELIVERING_ORDER_SUBTITLE_ACTIVE",
             "surfaces": ["otp"]
           },
           {
@@ -630,24 +562,16 @@
       },
       "push": [
         {
-          "type": "flat",
-          "scenario": "Order Picked Up — Title",
-          "key": "order.externalpushnotification.ORDER_PICKED_UP_TITLE"
+          "type": "combined",
+          "scenario": "Order Picked Up",
+          "titleKey": "order.externalpushnotification.ORDER_PICKED_UP_TITLE",
+          "descKey": "order.externalpushnotification.ORDER_PICKED_UP_MESSAGE"
         },
         {
-          "type": "flat",
-          "scenario": "Order Picked Up — Message",
-          "key": "order.externalpushnotification.ORDER_PICKED_UP_MESSAGE"
-        },
-        {
-          "type": "flat",
-          "scenario": "Order Near Customer — Title",
-          "key": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_TITLE"
-        },
-        {
-          "type": "flat",
-          "scenario": "Order Near Customer — Message",
-          "key": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_MESSAGE"
+          "type": "combined",
+          "scenario": "Order Near Customer",
+          "titleKey": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_TITLE",
+          "descKey": "order.externalpushnotification.ORDER_NEAR_CUSTOMER_MESSAGE"
         },
         {
           "type": "flat",
@@ -729,72 +653,36 @@
         ],
         "compensation": [
           {
-            "type": "flat",
-            "scenario": "Single Voucher — Banner Title",
-            "key": "order.compensation.vouchers.single.BANNER_TITLE",
+            "type": "combined",
+            "scenario": "Single Voucher — Banner",
+            "titleKey": "order.compensation.vouchers.single.BANNER_TITLE",
+            "descKey": "order.compensation.vouchers.single.BANNER_TEXT",
+            "actionKey": "order.compensation.vouchers.single.BANNER_ACTION",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Single Voucher — Banner Text",
-            "key": "order.compensation.vouchers.single.BANNER_TEXT",
+            "type": "combined",
+            "scenario": "Single Voucher — Sheet",
+            "titleKey": "order.compensation.vouchers.single.SHEET_TITLE",
+            "descKey": "order.compensation.vouchers.single.SHEET_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Single Voucher — Banner Action",
-            "key": "order.compensation.vouchers.single.BANNER_ACTION",
+            "type": "combined",
+            "scenario": "Multiple Vouchers — Banner",
+            "titleKey": "order.compensation.vouchers.multiple.BANNER_TITLE",
+            "descKey": "order.compensation.vouchers.multiple.BANNER_TEXT",
+            "actionKey": "order.compensation.vouchers.multiple.BANNER_ACTION",
             "delay": true,
             "surfaces": ["otp"]
           },
           {
-            "type": "flat",
-            "scenario": "Single Voucher — Sheet Title",
-            "key": "order.compensation.vouchers.single.SHEET_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Single Voucher — Sheet Text",
-            "key": "order.compensation.vouchers.single.SHEET_TEXT",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Multiple Vouchers — Banner Title",
-            "key": "order.compensation.vouchers.multiple.BANNER_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Multiple Vouchers — Banner Text",
-            "key": "order.compensation.vouchers.multiple.BANNER_TEXT",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Multiple Vouchers — Banner Action",
-            "key": "order.compensation.vouchers.multiple.BANNER_ACTION",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Multiple Vouchers — Sheet Title",
-            "key": "order.compensation.vouchers.multiple.SHEET_TITLE",
-            "delay": true,
-            "surfaces": ["otp"]
-          },
-          {
-            "type": "flat",
-            "scenario": "Multiple Vouchers — Sheet Text",
-            "key": "order.compensation.vouchers.multiple.SHEET_TEXT",
+            "type": "combined",
+            "scenario": "Multiple Vouchers — Sheet",
+            "titleKey": "order.compensation.vouchers.multiple.SHEET_TITLE",
+            "descKey": "order.compensation.vouchers.multiple.SHEET_TEXT",
             "delay": true,
             "surfaces": ["otp"]
           }

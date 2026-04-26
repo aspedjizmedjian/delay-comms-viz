@@ -139,40 +139,36 @@ const DATA = {
           "ku": "داواکاری تۆمار کرا"
         },
         {
-          "scenario": "Vendor Confirming (Active) — Title",
+          "scenario": "Vendor Confirming (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "{VENDOR_NAME} confirming your order",
-          "ar": "{VENDOR_NAME} يقوم بتأكيد طلبك",
-          "ku": "{VENDOR_NAME} داواکارییەکەت پەسەند دەکات"
+          "title": {
+            "en": "{VENDOR_NAME} confirming your order",
+            "ar": "{VENDOR_NAME} يقوم بتأكيد طلبك",
+            "ku": "{VENDOR_NAME} داواکارییەکەت پەسەند دەکات"
+          },
+          "desc": {
+            "en": "It’s a little busy at {VENDOR_NAME}, but things should start moving shortly 🙌",
+            "ar": "الوضع مزدحم قليلًا في {VENDOR_NAME}، لكننا نتابع طلبك 🙌",
+            "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵە، بەڵام بەم زوانە کارەکان دەست پێدەکەنەوە 🙌"
+          }
         },
         {
-          "scenario": "Vendor Confirming (Active) — Subtitle",
+          "scenario": "Vendor Confirming (Complete)",
           "surfaces": [
             "otp"
           ],
-          "en": "It’s a little busy at {VENDOR_NAME}, but things should start moving shortly 🙌",
-          "ar": "الوضع مزدحم قليلًا في {VENDOR_NAME}، لكننا نتابع طلبك 🙌",
-          "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵە، بەڵام بەم زوانە کارەکان دەست پێدەکەنەوە 🙌"
-        },
-        {
-          "scenario": "Vendor Confirming (Complete) — Title",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "{VENDOR_NAME} confirmed your order",
-          "ar": "{VENDOR_NAME} قام بتأكيد طلبك",
-          "ku": "{VENDOR_NAME} داواکارییەکەتی پەسەند کرد"
-        },
-        {
-          "scenario": "Vendor Confirming (Complete) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It was a bit busy at {VENDOR_NAME}, so your order took a little longer to confirm",
-          "ar": "كان الوضع مزدحمًا قليلًا في {VENDOR_NAME}، لذا استغرق تأكيد طلبك وقتًا أطول",
-          "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵ بوو، بۆیە پەسەندکردنی داواکارییەکەت کەمێک زیاتری خایاند"
+          "title": {
+            "en": "{VENDOR_NAME} confirmed your order",
+            "ar": "{VENDOR_NAME} قام بتأكيد طلبك",
+            "ku": "{VENDOR_NAME} داواکارییەکەتی پەسەند کرد"
+          },
+          "desc": {
+            "en": "It was a bit busy at {VENDOR_NAME}, so your order took a little longer to confirm",
+            "ar": "كان الوضع مزدحمًا قليلًا في {VENDOR_NAME}، لذا استغرق تأكيد طلبك وقتًا أطول",
+            "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵ بوو، بۆیە پەسەندکردنی داواکارییەکەت کەمێک زیاتری خایاند"
+          }
         },
         {
           "scenario": "Vendor Confirming (Inactive)",
@@ -238,16 +234,17 @@ const DATA = {
     },
     "push": [
       {
-        "scenario": "Order Accepted — Title",
-        "en": "Your order is confirmed",
-        "ar": "تم تأكيد طلبك",
-        "ku": "داواکارییەکەت پشتڕاست کرایەوە"
-      },
-      {
-        "scenario": "Order Accepted — Message",
-        "en": "{RESTAURANT_NAME} is on it! Great stuff is coming your way",
-        "ar": "{RESTAURANT_NAME} بدأ بتجهيز طلبك! أشياء رائعة في طريقها إليك",
-        "ku": "{RESTAURANT_NAME} دەستی بە ئامادەکردن کرد! شتی خۆش بەڕێوەیە"
+        "scenario": "Order Accepted",
+        "title": {
+          "en": "Your order is confirmed",
+          "ar": "تم تأكيد طلبك",
+          "ku": "داواکارییەکەت پشتڕاست کرایەوە"
+        },
+        "desc": {
+          "en": "{RESTAURANT_NAME} is on it! Great stuff is coming your way",
+          "ar": "{RESTAURANT_NAME} بدأ بتجهيز طلبك! أشياء رائعة في طريقها إليك",
+          "ku": "{RESTAURANT_NAME} دەستی بە ئامادەکردن کرد! شتی خۆش بەڕێوەیە"
+        }
       }
     ],
     "sms": [
@@ -529,40 +526,36 @@ const DATA = {
       ],
       "timeline": [
         {
-          "scenario": "Rider Assigned (Active) — Title",
+          "scenario": "Rider Assigned (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "Finding a rider",
-          "ar": "جاري العثور على سائق",
-          "ku": "گەڕان بۆ کارمەندی گەیاندندا"
+          "title": {
+            "en": "Finding a rider",
+            "ar": "جاري العثور على سائق",
+            "ku": "گەڕان بۆ کارمەندی گەیاندندا"
+          },
+          "desc": {
+            "en": "It’s busier than usual, but we’re finding you the nearest rider shortly 🛵",
+            "ar": "الوضع أكثر ازدحامًا من المعتاد، لكننا سنجد لك سائق قريبًا 🛵",
+            "ku": "لە ئاسایی جەنجاڵترە، بەڵام بەم زوانە نزیکترین کارمەندی گەیاندنت بۆ دەدۆزینەوە🛵"
+          }
         },
         {
-          "scenario": "Rider Assigned (Active) — Subtitle",
+          "scenario": "Rider Assigned (Complete)",
           "surfaces": [
             "otp"
           ],
-          "en": "It’s busier than usual, but we’re finding you the nearest rider shortly 🛵",
-          "ar": "الوضع أكثر ازدحامًا من المعتاد، لكننا سنجد لك سائق قريبًا 🛵",
-          "ku": "لە ئاسایی جەنجاڵترە، بەڵام بەم زوانە نزیکترین کارمەندی گەیاندنت بۆ دەدۆزینەوە🛵"
-        },
-        {
-          "scenario": "Rider Assigned (Complete) — Title",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Rider assigned",
-          "ar": "تم تعيين سائق",
-          "ku": "کارمەندی گەیاندن دیاری کرا"
-        },
-        {
-          "scenario": "Rider Assigned (Complete) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It took a bit longer to find a rider due to high demand",
-          "ar": "استغرق العثور على سائق وقتًا أطول بسبب ارتفاع عدد الطلبات",
-          "ku": "بە هۆی زۆریی داواکارییەکانەوە، دۆزینەوەی کارمەندی گەیاندن کەمێک زیاتری خایاند"
+          "title": {
+            "en": "Rider assigned",
+            "ar": "تم تعيين سائق",
+            "ku": "کارمەندی گەیاندن دیاری کرا"
+          },
+          "desc": {
+            "en": "It took a bit longer to find a rider due to high demand",
+            "ar": "استغرق العثور على سائق وقتًا أطول بسبب ارتفاع عدد الطلبات",
+            "ku": "بە هۆی زۆریی داواکارییەکانەوە، دۆزینەوەی کارمەندی گەیاندن کەمێک زیاتری خایاند"
+          }
         },
         {
           "scenario": "Rider Assigned (Inactive)",
@@ -574,40 +567,36 @@ const DATA = {
           "ku": "گەڕان بۆ کارمەندی گەیاندندا"
         },
         {
-          "scenario": "Rider at Vendor (Active) — Title",
+          "scenario": "Rider at Vendor (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "Rider on the way to {VENDOR_NAME}",
-          "ar": "السائق في طريقه إلى {VENDOR_NAME}",
-          "ku": "کارمەندی گەیاندن لە ڕێگایە بەرەو {VENDOR_NAME}"
+          "title": {
+            "en": "Rider on the way to {VENDOR_NAME}",
+            "ar": "السائق في طريقه إلى {VENDOR_NAME}",
+            "ku": "کارمەندی گەیاندن لە ڕێگایە بەرەو {VENDOR_NAME}"
+          },
+          "desc": {
+            "en": "Just a few mins late, but your rider will arrive at {VENDOR_NAME} shortly 🛵",
+            "ar": "تأخر السائق بضع دقائق فقط، وسيصل إلى {VENDOR_NAME} قريبًا 🛵",
+            "ku": "تەنها چەند خولەکێک دواکەوتووە، بەم زوانە کارمەندی گەیاندن دەگاتە لای {VENDOR_NAME} 🛵"
+          }
         },
         {
-          "scenario": "Rider at Vendor (Active) — Subtitle",
+          "scenario": "Rider at Vendor (Complete)",
           "surfaces": [
             "otp"
           ],
-          "en": "Just a few mins late, but your rider will arrive at {VENDOR_NAME} shortly 🛵",
-          "ar": "تأخر السائق بضع دقائق فقط، وسيصل إلى {VENDOR_NAME} قريبًا 🛵",
-          "ku": "تەنها چەند خولەکێک دواکەوتووە، بەم زوانە کارمەندی گەیاندن دەگاتە لای {VENDOR_NAME} 🛵"
-        },
-        {
-          "scenario": "Rider at Vendor (Complete) — Title",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Rider arrived at {VENDOR_NAME}",
-          "ar": "وصل السائق إلى {VENDOR_NAME}",
-          "ku": "کارمەندی گەیاندن گەیشتە لای {VENDOR_NAME}"
-        },
-        {
-          "scenario": "Rider at Vendor (Complete) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It took a little longer on the way to {VENDOR_NAME}",
-          "ar": "استغرق الوصول إلى {VENDOR_NAME} وقتًا أطول قليلًا",
-          "ku": "لە ڕێگەی بەرەو {VENDOR_NAME} کەمێک زیاتری خایاند"
+          "title": {
+            "en": "Rider arrived at {VENDOR_NAME}",
+            "ar": "وصل السائق إلى {VENDOR_NAME}",
+            "ku": "کارمەندی گەیاندن گەیشتە لای {VENDOR_NAME}"
+          },
+          "desc": {
+            "en": "It took a little longer on the way to {VENDOR_NAME}",
+            "ar": "استغرق الوصول إلى {VENDOR_NAME} وقتًا أطول قليلًا",
+            "ku": "لە ڕێگەی بەرەو {VENDOR_NAME} کەمێک زیاتری خایاند"
+          }
         },
         {
           "scenario": "Rider at Vendor (Inactive)",
@@ -619,70 +608,70 @@ const DATA = {
           "ku": "کارمەندی گەیاندن لە ڕێگایە بەرەو {VENDOR_NAME}"
         },
         {
-          "scenario": "Preparing for Pickup (Active) — Title",
+          "scenario": "Preparing for Pickup (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "Preparing your order",
-          "ar": "جاري تجهيز طلبك",
-          "ku": "داواکارییەکەت ئامادە دەکرێت"
+          "title": {
+            "en": "Preparing your order",
+            "ar": "جاري تجهيز طلبك",
+            "ku": "داواکارییەکەت ئامادە دەکرێت"
+          },
+          "desc": {
+            "en": "Things seem a bit busy, but we’ve notified {VENDOR_NAME} to speed up your order 🙌",
+            "ar": "يبدو أن الأمور مزدحمة قليلًا، لكننا أبلغنا {VENDOR_NAME} لتسريع تجهيز طلبك 🙌",
+            "ku": "وا دیارە کەمێک جەنجاڵ بێت، بەڵام {VENDOR_NAME}ـمان ئاگادار کردووەتەوە بۆ خێراکردنی داواکارییەکەت 🙌"
+          }
         },
         {
-          "scenario": "Preparing for Pickup (Active) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Things seem a bit busy, but we’ve notified {VENDOR_NAME} to speed up your order 🙌",
-          "ar": "يبدو أن الأمور مزدحمة قليلًا، لكننا أبلغنا {VENDOR_NAME} لتسريع تجهيز طلبك 🙌",
-          "ku": "وا دیارە کەمێک جەنجاڵ بێت، بەڵام {VENDOR_NAME}ـمان ئاگادار کردووەتەوە بۆ خێراکردنی داواکارییەکەت 🙌"
-        },
-        {
-          "scenario": "Preparing for Pickup — Rider Delayed (Active) — Title",
+          "scenario": "Preparing for Pickup — Rider Delayed (Active)",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "Order ready for pickup",
-          "ar": "الطلب جاهز للاستلام",
-          "ku": "داواکاری ئامادەیە بۆ هەڵگرتن"
+          "title": {
+            "en": "Order ready for pickup",
+            "ar": "الطلب جاهز للاستلام",
+            "ku": "داواکاری ئامادەیە بۆ هەڵگرتن"
+          },
+          "desc": {
+            "en": "Your rider is picking up your order and should be on the way to you shortly",
+            "ar": "السائق يستلم طلبك الآن وسيكون في طريقه إليك قريبًا",
+            "ku": "کارمەندی گەیاندنەکەت داواکارییەکەت هەڵدەگرێت و کەمێکی تر بەرەو لای تۆ بەڕێ دەکەوێ"
+          }
         },
         {
-          "scenario": "Preparing for Pickup — Rider Delayed (Active) — Subtitle",
+          "scenario": "Preparing for Pickup (Complete)",
+          "surfaces": [
+            "otp"
+          ],
+          "title": {
+            "en": "Order ready and picked up",
+            "ar": "تم تجهيز الطلب واستلامه",
+            "ku": "داواکارییەکە ئامادەیە وهەڵگیرا"
+          },
+          "desc": {
+            "en": "It was a bit busy at {VENDOR_NAME}, so your order took a little longer to prepare",
+            "ar": "كان الوضع مزدحمًا قليلًا في {VENDOR_NAME}، لذا استغرق تجهيز طلبك وقتًا أطول",
+            "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵ بوو، بۆیە ئامادەکردنی داواکارییەکەت کەمێک زیاتری خایاند"
+          }
+        },
+        {
+          "scenario": "Preparing for Pickup — Rider Delayed (Complete)",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "Your rider is picking up your order and should be on the way to you shortly",
-          "ar": "السائق يستلم طلبك الآن وسيكون في طريقه إليك قريبًا",
-          "ku": "کارمەندی گەیاندنەکەت داواکارییەکەت هەڵدەگرێت و کەمێکی تر بەرەو لای تۆ بەڕێ دەکەوێ"
-        },
-        {
-          "scenario": "Preparing for Pickup (Complete) — Title",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Order ready and picked up",
-          "ar": "تم تجهيز الطلب واستلامه",
-          "ku": "داواکارییەکە ئامادەیە وهەڵگیرا"
-        },
-        {
-          "scenario": "Preparing for Pickup (Complete) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It was a bit busy at {VENDOR_NAME}, so your order took a little longer to prepare",
-          "ar": "كان الوضع مزدحمًا قليلًا في {VENDOR_NAME}، لذا استغرق تجهيز طلبك وقتًا أطول",
-          "ku": "لای {VENDOR_NAME} کەمێک جەنجاڵ بوو، بۆیە ئامادەکردنی داواکارییەکەت کەمێک زیاتری خایاند"
-        },
-        {
-          "scenario": "Preparing for Pickup — Rider Delayed (Complete) — Subtitle",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It took a little more time to pick up your order",
-          "ar": "استغرق استلام طلبك وقتًا أطول قليلًا من المعتاد",
-          "ku": "کەمێک کاتی زیاتری پێ چوو بۆ هەڵگرتنی داواکارییەکەت"
+          "title": {
+            "en": "Order ready and picked up",
+            "ar": "تم تجهيز الطلب واستلامه",
+            "ku": "داواکارییەکە ئامادەیە وهەڵگیرا"
+          },
+          "desc": {
+            "en": "It took a little more time to pick up your order",
+            "ar": "استغرق استلام طلبك وقتًا أطول قليلًا من المعتاد",
+            "ku": "کەمێک کاتی زیاتری پێ چوو بۆ هەڵگرتنی داواکارییەکەت"
+          }
         },
         {
           "scenario": "Preparing for Pickup (Inactive)",
@@ -729,16 +718,17 @@ const DATA = {
     },
     "push": [
       {
-        "scenario": "Order Near Vendor — Title",
-        "en": "Your rider's arriving at {RESTAURANT_NAME}",
-        "ar": "السائق وصل إلى {RESTAURANT_NAME}",
-        "ku": "کارمەندی گەیاندنەکەت گەیشتە  {RESTAURANT_NAME}"
-      },
-      {
-        "scenario": "Order Near Vendor — Message",
-        "en": "They will pick up your order as soon as it's ready",
-        "ar": "سيستلم الطلب بمجرد أن يصبح جاهزًا",
-        "ku": "هەر کات داواکارییەکەت ئامادە بوو، وەریدەگرن"
+        "scenario": "Order Near Vendor",
+        "title": {
+          "en": "Your rider's arriving at {RESTAURANT_NAME}",
+          "ar": "السائق وصل إلى {RESTAURANT_NAME}",
+          "ku": "کارمەندی گەیاندنەکەت گەیشتە  {RESTAURANT_NAME}"
+        },
+        "desc": {
+          "en": "They will pick up your order as soon as it's ready",
+          "ar": "سيستلم الطلب بمجرد أن يصبح جاهزًا",
+          "ku": "هەر کات داواکارییەکەت ئامادە بوو، وەریدەگرن"
+        }
       }
     ],
     "sms": [
@@ -981,40 +971,36 @@ const DATA = {
       ],
       "timeline": [
         {
-          "scenario": "Rider on the Way (Active) — Title",
+          "scenario": "Rider on the Way (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "Order on the way",
-          "ar": "الطلب في الطريق",
-          "ku": "داواکارییەکە لە ڕێگەیە"
+          "title": {
+            "en": "Order on the way",
+            "ar": "الطلب في الطريق",
+            "ku": "داواکارییەکە لە ڕێگەیە"
+          },
+          "desc": {
+            "en": "Your rider is arriving shortly to pick up your order",
+            "ar": "سيصل السائق قريبًا لاستلام طلبك",
+            "ku": "کارمەندی گەیاندنەکەت کەمێکی تر دەگات بۆ هەڵگرتنی داواکارییەکەت"
+          }
         },
         {
-          "scenario": "Rider on the Way (Active) — Subtitle",
+          "scenario": "Rider on the Way (Complete)",
           "surfaces": [
             "otp"
           ],
-          "en": "Your rider is arriving shortly to pick up your order",
-          "ar": "سيصل السائق قريبًا لاستلام طلبك",
-          "ku": "کارمەندی گەیاندنەکەت کەمێکی تر دەگات بۆ هەڵگرتنی داواکارییەکەت"
-        },
-        {
-          "scenario": "Rider on the Way (Complete) — Title",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Rider arrived nearby",
-          "ar": "السائق وصل قريب من موقعك",
-          "ku": "کارمەندی گەیاندن لە نزیک شوێنەکەتە"
-        },
-        {
-          "scenario": "Rider on the Way (Complete) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Traffic slowed things down a bit along the way",
-          "ar": "تسبب ازدحام المرور في بعض التأخير على الطريق",
-          "ku": "ترافیک و جەنجاڵی کارەکانی کەمێک خاو کردەوە"
+          "title": {
+            "en": "Rider arrived nearby",
+            "ar": "السائق وصل قريب من موقعك",
+            "ku": "کارمەندی گەیاندن لە نزیک شوێنەکەتە"
+          },
+          "desc": {
+            "en": "Traffic slowed things down a bit along the way",
+            "ar": "تسبب ازدحام المرور في بعض التأخير على الطريق",
+            "ku": "ترافیک و جەنجاڵی کارەکانی کەمێک خاو کردەوە"
+          }
         },
         {
           "scenario": "Rider on the Way (Inactive)",
@@ -1026,22 +1012,20 @@ const DATA = {
           "ku": "داواکارییەکە لە ڕێگەیە"
         },
         {
-          "scenario": "Delivering Order (Active) — Title",
+          "scenario": "Delivering Order (Active)",
           "surfaces": [
             "otp"
           ],
-          "en": "Rider dropping off your order",
-          "ar": "السائق يسلّم طلبك",
-          "ku": "کارمەندی گەیاندن داواکارییەکەت ڕادەست دەکات"
-        },
-        {
-          "scenario": "Delivering Order (Active) — Subtitle",
-          "surfaces": [
-            "otp"
-          ],
-          "en": "A quick call might help them find you faster 🙏",
-          "ar": "مكالمة سريعة قد تساعدهم في الوصول إليك بشكل أسرع 🙏",
-          "ku": "پەیوەندییەکی کورت یارمەتیی دەدات خێراتر بتدۆزێتەوە 🙏"
+          "title": {
+            "en": "Rider dropping off your order",
+            "ar": "السائق يسلّم طلبك",
+            "ku": "کارمەندی گەیاندن داواکارییەکەت ڕادەست دەکات"
+          },
+          "desc": {
+            "en": "A quick call might help them find you faster 🙏",
+            "ar": "مكالمة سريعة قد تساعدهم في الوصول إليك بشكل أسرع 🙏",
+            "ku": "پەیوەندییەکی کورت یارمەتیی دەدات خێراتر بتدۆزێتەوە 🙏"
+          }
         },
         {
           "scenario": "Delivering Order (Complete)",
@@ -1097,28 +1081,30 @@ const DATA = {
     },
     "push": [
       {
-        "scenario": "Order Picked Up — Title",
-        "en": "Your order’s on the way 🛵",
-        "ar": "السائق في طريقه إليك 🛵",
-        "ku": "کارمەندی گەیاندنەکەت لە ڕێگەیە 🛵"
+        "scenario": "Order Picked Up",
+        "title": {
+          "en": "Your order’s on the way 🛵",
+          "ar": "السائق في طريقه إليك 🛵",
+          "ku": "کارمەندی گەیاندنەکەت لە ڕێگەیە 🛵"
+        },
+        "desc": {
+          "en": "We’ll let you know when your rider's nearby",
+          "ar": "سننبهك عندما يقترب من الموقع",
+          "ku": "ئاگادارت دەکەینەوە هەرکات نزیک بۆوە"
+        }
       },
       {
-        "scenario": "Order Picked Up — Message",
-        "en": "We’ll let you know when your rider's nearby",
-        "ar": "سننبهك عندما يقترب من الموقع",
-        "ku": "ئاگادارت دەکەینەوە هەرکات نزیک بۆوە"
-      },
-      {
-        "scenario": "Order Near Customer — Title",
-        "en": "Your rider's nearby 🎉",
-        "ar": "طلبك على وشك الوصول 🎉",
-        "ku": "کارمەندی گەیاندنەکەت نزیکە 🎉"
-      },
-      {
-        "scenario": "Order Near Customer — Message",
-        "en": "Just around the corner! Give them a moment to drop off your order",
-        "ar": "دقائق وسيكون الطلب بين يديك!",
-        "ku": "زۆر نزیکە! کەمێکی تر داواکارییەکە دەگاتە دەستت"
+        "scenario": "Order Near Customer",
+        "title": {
+          "en": "Your rider's nearby 🎉",
+          "ar": "طلبك على وشك الوصول 🎉",
+          "ku": "کارمەندی گەیاندنەکەت نزیکە 🎉"
+        },
+        "desc": {
+          "en": "Just around the corner! Give them a moment to drop off your order",
+          "ar": "دقائق وسيكون الطلب بين يديك!",
+          "ku": "زۆر نزیکە! کەمێکی تر داواکارییەکە دەگاتە دەستت"
+        }
       },
       {
         "scenario": "Rider Nearby",
@@ -1309,100 +1295,78 @@ const DATA = {
       ],
       "compensation": [
         {
-          "scenario": "Single Voucher — Banner Title",
+          "scenario": "Single Voucher — Banner",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "Sorry for the delay",
-          "ar": "نعتذر عن هذا التأخير.",
-          "ku": "زۆر داوای لێبوردن دەکەین بۆ دواکەوتنەکە"
+          "title": {
+            "en": "Sorry for the delay",
+            "ar": "نعتذر عن هذا التأخير.",
+            "ku": "زۆر داوای لێبوردن دەکەین بۆ دواکەوتنەکە"
+          },
+          "desc": {
+            "en": "Let us make it up to you with a {AMOUNT} voucher.",
+            "ar": "إليك قسيمة بقيمة {AMOUNT} كهدية بسيطة تعويضًا لك.",
+            "ku": "دەمانەوێت قەرەبووت بکەینەوە بە کۆبۆنێکی {AMOUNT}"
+          },
+          "action": {
+            "en": "Claim voucher",
+            "ar": "استلم القسيمة",
+            "ku": "بەکارهێنانی کۆبۆن"
+          }
         },
         {
-          "scenario": "Single Voucher — Banner Text",
+          "scenario": "Single Voucher — Sheet",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "Let us make it up to you with a {AMOUNT} voucher.",
-          "ar": "إليك قسيمة بقيمة {AMOUNT} كهدية بسيطة تعويضًا لك.",
-          "ku": "دەمانەوێت قەرەبووت بکەینەوە بە کۆبۆنێکی {AMOUNT}"
+          "title": {
+            "en": "We've added a {AMOUNT} voucher to your account",
+            "ar": "أضفنا قسيمة بقيمة {AMOUNT} إلى حسابك.",
+            "ku": "کۆبۆنێکی {AMOUNT}مان بۆ جزدانەکەت زیاد کرد"
+          },
+          "desc": {
+            "en": "Use it on any future order within the next 14 days. To see all your vouchers, go to your account.",
+            "ar": "يمكنك استخدامها مع أي طلب قادم.",
+            "ku": "بەردەستە بۆ بەکارهێنانی لە هەر داواکارییەکی داهاتووتدا"
+          }
         },
         {
-          "scenario": "Single Voucher — Banner Action",
+          "scenario": "Multiple Vouchers — Banner",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "Claim voucher",
-          "ar": "استلم القسيمة",
-          "ku": "بەکارهێنانی کۆبۆن"
+          "title": {
+            "en": "Here's {AMOUNT} just for you",
+            "ar": "{AMOUNT} خصيصًا لك"
+          },
+          "desc": {
+            "en": "It’s our way of saying sorry for the delay with your order",
+            "ar": "إنها طريقتنا للإعتذار عن التأخير في طلبك"
+          },
+          "action": {
+            "en": "Claim vouchers",
+            "ar": "احصل على القسائم",
+            "ku": "بەکارهێنانی کۆبۆن"
+          }
         },
         {
-          "scenario": "Single Voucher — Sheet Title",
+          "scenario": "Multiple Vouchers — Sheet",
           "delay": true,
           "surfaces": [
             "otp"
           ],
-          "en": "We've added a {AMOUNT} voucher to your account",
-          "ar": "أضفنا قسيمة بقيمة {AMOUNT} إلى حسابك.",
-          "ku": "کۆبۆنێکی {AMOUNT}مان بۆ جزدانەکەت زیاد کرد"
-        },
-        {
-          "scenario": "Single Voucher — Sheet Text",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Use it on any future order within the next 14 days. To see all your vouchers, go to your account.",
-          "ar": "يمكنك استخدامها مع أي طلب قادم.",
-          "ku": "بەردەستە بۆ بەکارهێنانی لە هەر داواکارییەکی داهاتووتدا"
-        },
-        {
-          "scenario": "Multiple Vouchers — Banner Title",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Here's {AMOUNT} just for you",
-          "ar": "{AMOUNT} خصيصًا لك"
-        },
-        {
-          "scenario": "Multiple Vouchers — Banner Text",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "It’s our way of saying sorry for the delay with your order",
-          "ar": "إنها طريقتنا للإعتذار عن التأخير في طلبك"
-        },
-        {
-          "scenario": "Multiple Vouchers — Banner Action",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Claim vouchers",
-          "ar": "احصل على القسائم",
-          "ku": "بەکارهێنانی کۆبۆن"
-        },
-        {
-          "scenario": "Multiple Vouchers — Sheet Title",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "We’ve added three {AMOUNT} vouchers to your account",
-          "ar": "قمنا بإضافة ثلاث قسائم بقيمة {AMOUNT} لحسابك"
-        },
-        {
-          "scenario": "Multiple Vouchers — Sheet Text",
-          "delay": true,
-          "surfaces": [
-            "otp"
-          ],
-          "en": "Use them on any order within the next 14 days. Find your vouchers at any time by tapping ‘Account’",
-          "ar": "قم باستخدامها مع أي طلب خلال 14 يوم. يمكنك إيجاد قسائمك في أي وقت في صفحة \"حسابك\""
+          "title": {
+            "en": "We’ve added three {AMOUNT} vouchers to your account",
+            "ar": "قمنا بإضافة ثلاث قسائم بقيمة {AMOUNT} لحسابك"
+          },
+          "desc": {
+            "en": "Use them on any order within the next 14 days. Find your vouchers at any time by tapping ‘Account’",
+            "ar": "قم باستخدامها مع أي طلب خلال 14 يوم. يمكنك إيجاد قسائمك في أي وقت في صفحة \"حسابك\""
+          }
         }
       ]
     },
@@ -1444,30 +1408,21 @@ const SEASONAL_DATA = {
   friday_prayer: {
     label: "Friday Prayers",
     messages: [
-      { scenario: "Friday Prayers — OTP", en: "It's Friday prayer time so deliveries might take a bit longer, but no worries, we're on it!", ar: "قد يتأخر طلبك قليلاً بسبب صلاة الجمعة، لكن لا تقلق نحن نعمل عليه!", delay: true, surfaces: ["otp"] },
-      { scenario: "Friday Prayers — Homescreen", en: "It's a little busy during Friday prayer", ar: "قد يكون هناك بعض التأخير خلال وقت صلاة الجمعة", delay: true, surfaces: ["homescreen"] },
-      { scenario: "Friday Prayers — SMS", en: "Thanks for ordering from Talabat.com. Your order is sent to Restaurant & might be delayed due to prayer time.", ar: "شكرا لاختيارك طلبات. من الممكن أن يكون هناك تأخير طفيف في التوصيل بسبب وقت الصلاة.", delay: true },
+      { scenario: "Friday Prayers", en: "It's Friday prayer time so deliveries might take a bit longer, but no worries, we're on it!", ar: "قد يتأخر طلبك قليلاً بسبب صلاة الجمعة، لكن لا تقلق نحن نعمل عليه!", delay: true, surfaces: ["otp"] },
+      { scenario: "Friday Prayers", en: "It's a little busy during Friday prayer", ar: "قد يكون هناك بعض التأخير خلال وقت صلاة الجمعة", delay: true, surfaces: ["homescreen"] },
     ],
   },
   iftar_rush: {
     label: "Ramadan / Peak Iftar",
     messages: [
-      { scenario: "Iftar Rush — OTP", en: "It's peak time for Iftar orders! Deliveries might take a bit longer, but we've got this \u{1F4AA}", ar: "إنه وقت الذروة لطلبات الإفطار! قد يكون هناك بعض التأخير في توصيل الطلبات. لكننا نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
-      { scenario: "Iftar Rush — Homescreen", en: "Iftar time's a bit busy, but we've got this!", ar: "إنه وقت الذروة لطلبات الإفطار، لكننا نتابع طلبك!", delay: true, surfaces: ["homescreen"] },
+      { scenario: "Iftar Rush", en: "It's peak time for Iftar orders! Deliveries might take a bit longer, but we've got this \u{1F4AA}", ar: "إنه وقت الذروة لطلبات الإفطار! قد يكون هناك بعض التأخير في توصيل الطلبات. لكننا نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
+      { scenario: "Iftar Rush", en: "Iftar time's a bit busy, but we've got this!", ar: "إنه وقت الذروة لطلبات الإفطار، لكننا نتابع طلبك!", delay: true, surfaces: ["homescreen"] },
     ],
   },
   new_years: {
     label: "New Year's Eve",
     messages: [
-      { scenario: "New Year's Rush — OTP", en: "New Year's countdown is on! Orders might take a little longer due to the rush, but we're on it \u{1F4AA}", ar: "العام الجديد على الأبواب! قد يكون هناك بعض التأخير لزيادة الطلبات، ولكن لا تقلق نحن نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
-    ],
-  },
-  weather_gps: {
-    label: "Weather & GPS Issues",
-    messages: [
-      { scenario: "Bad Weather Delay — SMS", en: "Dear [Customer Name], Your order might be slightly delayed due to bad weather conditions", ar: null, delay: true },
-      { scenario: "Summer Heat Notice — SMS", en: "Summer is here! Due to the heat, riders are delivering orders by car so there might be some delays. Thanks for helping our riders keep cool", ar: null, delay: true },
-      { scenario: "Bad Weather Cancellation — SMS", en: "Hi from Talabat. Unfortunately your order [Order ID] was cancelled due to environmental circumstances.", ar: "مرحبا. للأسف تم إلغاء طلبك [Order ID] بسبب أحوال بيئية." },
+      { scenario: "New Year's Rush", en: "New Year's countdown is on! Orders might take a little longer due to the rush, but we're on it \u{1F4AA}", ar: "العام الجديد على الأبواب! قد يكون هناك بعض التأخير لزيادة الطلبات، ولكن لا تقلق نحن نعمل على طلبك \u{1F4AA}", delay: true, surfaces: ["otp"] },
     ],
   },
 };
@@ -1639,9 +1594,11 @@ function renderMsgCard(msg, showSurfaces) {
       const descText = msg.desc && msg.desc[lang] ? msg.desc[lang] : "";
       inner += `<div class="lang-row lang-row-combined" ${dir}>`;
       inner += `<span class="lang-label ${lang}">${LANG_LABELS[lang]}</span>`;
+      const actionText = msg.action && msg.action[lang] ? msg.action[lang] : "";
       inner += `<div class="combined-text">`;
       inner += `<div class="combined-title">${titleText}</div>`;
       if (descText) inner += `<div class="combined-desc">${descText}</div>`;
+      if (actionText) inner += `<div class="combined-action">${actionText}</div>`;
       inner += `</div></div>`;
     });
   } else {

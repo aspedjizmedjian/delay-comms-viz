@@ -158,6 +158,16 @@ function resolveMapping(entry, lookup) {
       if (descData.ar) msg.desc.ar = descData.ar;
       if (descData.ku) msg.desc.ku = descData.ku;
     }
+
+    if (entry.actionKey) {
+      const actionData = lookup[entry.actionKey];
+      if (actionData) {
+        msg.action = {};
+        if (actionData.en) msg.action.en = actionData.en;
+        if (actionData.ar) msg.action.ar = actionData.ar;
+        if (actionData.ku) msg.action.ku = actionData.ku;
+      }
+    }
   } else {
     // Flat format
     const data = lookup[entry.key];
